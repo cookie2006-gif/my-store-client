@@ -41,19 +41,14 @@ export default function PopularContent({ data }: PopularContentProps) {
         </CardTitle>
       </Link>
       <div className="w-full flex items-center justify-center gap-2 flex-wrap px-2 mt-4 min-h-[56px]">
-        {data.cuisine && (
-          <div className="rounded-md bg-emerald-500/10 px-2 py-[2px] text-xs capitalize whitespace-nowrap  text-center">
-            {data.cuisine}
-          </div>
-        )}
         {data.category && (
           <div className="rounded-md bg-blue-500/10 px-2 py-[2px] text-xs capitalize whitespace-nowrap  text-center">
             {data.category}
           </div>
         )}
-        {data.kitchen && (
+        {data.origin && (
           <div className="rounded-md bg-red-500/10 px-2 py-[2px] text-xs capitalize whitespace-nowrap  text-center">
-            {data.kitchen}
+            {data.origin}
           </div>
         )}
         {data.size && (
