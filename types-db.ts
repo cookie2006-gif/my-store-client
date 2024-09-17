@@ -46,3 +46,9 @@ export interface Orders {
   order_status: string;
   userId: string;
 }
+
+export interface Origin {
+  id: string;
+  name: string;
+  value: string;
+}
